@@ -1,0 +1,133 @@
+body {
+  /* background-color: rgb(120, 120, 120); */
+}
+
+.a {
+  display: flex;
+  justify-content: center;
+}
+
+.card1 {
+  margin: 10px;
+  border-style: none;
+  position: relative;
+  display: inline-block;
+}
+
+.card-body1 {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 75%;
+  left: 10%;
+}
+
+.card-body1:hover {
+  opacity: 1;
+}
+
+.btn {
+  color: black;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.btn:hover {
+  color: black;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    display: none;
+  }
+}
+
+
+
+/* навигация для мобильных */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+#nav-tel.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.tel {
+  background-color: yellowgreen;
+}
+
+.nav-tel {
+  display: flex;
+  margin-left: 20px;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+@media (min-width: 992px) {
+  .nav-tel {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .left {
+    display: none;
+  }
+}
+
+
+/* навигация для мобильных */
+
+
+
+
+
+.left {
+  width: 15%;
+  background-color: white;
+  border-right: solid;
+}
+
+.nav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 50;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.nav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+}
+
+.nav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.block1 {
+  margin: 5px;
+  background-color: aqua;
+  height: 50px;
+  overflow: auto;
+}
+
+
+
+.right {
+  width: 65%;
+  background-color: aquamarine;
+}
